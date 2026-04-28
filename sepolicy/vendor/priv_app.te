@@ -1,0 +1,7 @@
+allow priv_app DisplayFeatureControl:service_manager find;
+allow priv_app miui_multi_display:service_manager find;
+allow priv_app perfshielder:service_manager find;
+allow priv_app ProcessManager:service_manager find;
+# allow priv_app cgroup:file { open read }; # Melanggar neverallow
+# allow priv_app vendor_audio_prop:file { getattr open }; # Unknown type on some AOSP
+# allow priv_app vendor_file:file { execute getattr open read }; # Melanggar neverallow

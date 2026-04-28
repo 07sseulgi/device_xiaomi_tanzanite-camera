@@ -1,0 +1,19 @@
+# MiuiCamera for Tanzanite (MTK)
+# Based on munch (System-side only)
+
+# APK
+system/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Camera,Camera2,GoogleCameraGo
+
+# System Libraries (JNI & Framework)
+system/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
+system/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
+system/lib64/libmicampostproc_client.so:system/lib64/libmicampostproc_client.so
+system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
+
+# SNPE & AI Libraries
+system/lib64/libSNPE.so:system/lib64/libSNPE.so
+system/lib64/libmiocr_wrapper.so:system/lib64/libmiocr_wrapper.so
+system/lib64/libsymphony-cpu.so:system/lib64/libsymphony-cpu.so
+
+# Device Features
+product/etc/device_features/tanzanite.xml:product/etc/device_features/tanzanite.xml
